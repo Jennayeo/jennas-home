@@ -15,31 +15,51 @@
   <body id="body">
     <div id="wrap" class="wrap">
       <header class="header">
-        <h1 class="main-copy">Jenna Jiyoung Yeo</h1>
-        <p>
-          <a href="https://github.com/flackr/scroll-timeline"
-            >scroll-timeline.js</a
-          >
-          Lorem ipsum dolor,<br />
-          sit amet consectetur adipisicing elit.<br />
-          Repellat hic excepturi<br />
-          asperiores blanditiis explicabo<br />
-          tenetur modi consectetur animi<br />
-          reiciendis maxime!
-        </p>
+        <div>
+          <h1 class="main-copy">Jenna Jiyoung Yeo</h1>
+          <p>
+            <a href="https://github.com/flackr/scroll-timeline"
+              >scroll-timeline.js</a
+            >
+            Lorem ipsum dolor,<br />
+            sit amet consectetur adipisicing elit.<br />
+            Repellat hic excepturi<br />
+            asperiores blanditiis explicabo<br />
+            tenetur modi consectetur animi<br />
+            reiciendis maxime!
+          </p>
+        </div>
+        <div>
+          <!-- <div class="text-block"> -->
+          <img class="bounce" src="./images/skills/java-script.png" />
+          <img class="bounce" src="./images/skills/css-3.png" />
+          <img class="bounce" src="./images/skills/next.png" />
+          <img class="bounce" src="./images/skills/react.png" />
+          <img class="bounce" src="./images/skills/typescript.png" />
+          <!-- </div> -->
+        </div>
       </header>
 
-      <div class="airstrip airstrip-a"></div>
-      <div class="airstrip airstrip-b"></div>
+      <!-- <div class="airstrip airstrip-a"></div>
+      <div class="airstrip airstrip-b"></div> -->
 
       <section class="gallery-timeline">
+        <!-- //모달 팝업창 -->
+        <div id="modalWrap" style="display: none">
+          <div id="modalContent">
+            <div id="modalBody">
+              <span id="closeBtn">&times;</span>
+              <div id="content"></div>
+            </div>
+          </div>
+        </div>
         <!-- 제주도 -->
         <!-- <figure class="jeju"><img src="images/jeju.svg" alt="제주도" /></figure> -->
         <!-- 갤러리 -->
         <div class="gallery">
           <div class="gallery-item">
             <figure id="project1" class="gallery-photo">
-              <img src="images/projects/photo01.jpg" alt="" />
+              <img src="images/projects/weShare1.png" alt="" />
             </figure>
           </div>
           <div class="gallery-item">
@@ -49,27 +69,18 @@
           </div>
           <div class="gallery-item">
             <figure id="project3" class="gallery-photo">
-              <img src="images/projects/weShare1.png" alt="" />
+              <img src="images/projects/fms-biz-staff-cover.png" alt="" />
             </figure>
           </div>
           <div class="gallery-item">
             <figure id="project4" class="gallery-photo">
-              <img src="images/projects/photo04.jpg" alt="" />
+              <img src="images/projects/fms-staff-cover.png" alt="" />
             </figure>
           </div>
           <div class="gallery-item">
             <figure id="project5" class="gallery-photo">
-              <img src="images/projects/photo05.jpg" alt="" />
+              <img src="images/projects/fms-business2.png" alt="" />
             </figure>
-          </div>
-        </div>
-        <!-- //모달 팝업창 -->
-        <div id="modalWrap">
-          <div id="modalContent">
-            <div id="modalBody">
-              <span id="closeBtn">&times;</span>
-              <div id="content"></div>
-            </div>
           </div>
         </div>
       </section>
@@ -97,8 +108,8 @@
               d="m523.89,4304.71v-102.65c0-380.2-349.01-699.56-349.01-699.56-444.83-376.4,250.93-486.65,250.93-486.65,444.83-102.65,557.68-250.93,557.68-250.93,283.93-319.37-486.96-646.34-486.96-646.34-258.91-112.16-314.04-296.55-314.04-296.55C-5.24,1295.45,395.39,1206.1,502.03,1255.07c65,29.84,105.64,109.85,90,179.91-35.06,157.03-234.66,151.32-234.66,151.32-287.05,0-340.67-193.9-340.67-193.9-85.15-285.15,215.21-534.18,215.21-534.18,309.81-245.7,291.98-636.53,291.98-636.53V0"
             />
 
-            <g class="hello-jeju">
-              <path
+            <g class="projects">
+              <!-- <path
                 class="cls-2"
                 d="m239.51,1492.31l-11.33,2.83-4.93-19.74-16.79,4.2,4.93,19.74-11.4,2.85-11.82-47.28,11.4-2.85,4.69,18.77,16.79-4.2-4.69-18.77,11.33-2.83,11.82,47.28Z"
               />
@@ -133,29 +144,67 @@
               <path
                 class="cls-2"
                 d="m553.63,1363.56l7.74,30.94c.88,3.51.89,6.73.04,9.67s-2.51,5.43-4.96,7.47c-2.46,2.04-5.59,3.54-9.4,4.49-5.76,1.44-10.67,1.08-14.73-1.08s-6.77-5.83-8.13-11.01l-7.79-31.17,11.46-2.87,7.85,31.4c1.42,5.14,4.47,7.13,9.15,5.96,2.36-.59,3.98-1.69,4.87-3.29.89-1.6.97-3.86.24-6.79l-7.72-30.88,11.4-2.85Z"
-              />
+              /> -->
             </g>
           </svg>
         </div>
       </section>
 
       <section class="page-content">
-        <div class="text-block" style="right: 1%; top: 25%">
+        <!-- <div class="text-block" style="right: 1%; top: 18%">
           <img class="bounce" src="./images/skills/java-script.png" />
           <img class="bounce" src="./images/skills/css-3.png" />
           <img class="bounce" src="./images/skills/next.png" />
           <img class="bounce" src="./images/skills/react.png" />
           <img class="bounce" src="./images/skills/typescript.png" />
+        </div> -->
+        <!-- <div class="text-block-project" style="right: 28%; top: 32%">
+          Projects
+        </div> -->
+        <div class="text-block-career" style="right: 0%; top: 1100px">
+          <h1>💼 WORK EXPERIENCE</h1>
+          <div>
+            <ul>
+              <li>
+                <p>IMS Mobility (2021.08.10 ~ 2023.05.08)</p>
+                <p>Connect 개발팀 - FE 개발 담당</p>
+                <p>
+                  차량관제 서비스를 제공하는 커넥트 개발팀에서 웹개발을
+                  진행하였습니다. 주 업무는 기존 커넥트 웹, 앱, 관리자 페이지
+                  신규 기능 추가, 유지보수와 함께 신규 프로젝트로 진행된
+                  법인차량 관제 서비 스 런칭까지 진행하였습니다.
+                </p>
+              </li>
+            </ul>
+            <img src="./images/imsconnect.png" />
+          </div>
         </div>
-        <div class="text-block" style="right: 20%; top: 80%">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aspernatur
-          explicabo doloremque ex earum deleniti itaque repellendus labore
-          placeat laboriosam?
-        </div>
-        <div class="text-block" style="left: 0; top: 90%; width: 30%">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aspernatur
-          explicabo doloremque ex earum deleniti itaque repellendus labore
-          placeat laboriosam?
+        <div class="text-block-education" style="right: 60%; top: 900px">
+          <h1>🎓 Education</h1>
+          <div>
+            <p>Michigan State University(2015.09 ~ 2019.05)</p>
+            <p>Business Major Bachelor's Degree</p>
+          </div>
+          <!-- <div>
+            <p>데잇걸즈 DATA.IT.GIRLS (2020.07 ~ 2020.12)</p>
+            <p>
+              과학기술정보통신원과 한국정보화진흥원이 주관하는 데이터분석가 양성
+              프로그램으로 mySQL, 파 이썬, 태블로 그리고 회귀분석을 중심으로한
+              통계를 공부하였습니다. 데이터 분석 프로젝트를 진행 하며
+              팀원간의협업능력도 기를수있었으며 서비스개선을위한
+              데이터분석스킬을 성장시킬수 있는 좋은 기회였습니다.
+            </p>
+            <p>한국소프트웨어산업협회 우수상 수상</p>
+          </div> -->
+          <div>
+            <p>항해99 (2021.03 ~ 2021.06) 수료</p>
+            <p>
+              프론트엔드 개발자로 성장하기위해 99일간 하루 평균 16시간씩
+              코딩하는 부트캠프에 참여하였습 니다. 프론트엔드 개발자로서 역량을
+              발전시킬뿐 아닌 서버 개발자, 디자이너와도 협업하여 프로젝 트를
+              진행할 수 있었습니다.
+            </p>
+          </div>
         </div>
         <div
           class="text-block"

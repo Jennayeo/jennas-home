@@ -1,8 +1,11 @@
 import "./scroll-timeline.js";
 import "./airplane.js";
 import "./hello.js";
-import "./gallery.js";
+// import "./gallery.js";
 import "./track.js";
+import "./carrer.js";
+import "./education.js";
+
 import "./modal.js";
 
 document.body.animate(
