@@ -42,7 +42,7 @@ btn2.onclick = function () {
   window.scrollTo({ top: 30 * unit, left: 0, behavior: "smooth" });
 
   modalBody.innerHTML += `<div><h1>🏔️ 등산은산타Santa</h1><p><img src="/images/projects/santa.png"/></p></div><div><p><span style="background:#E74C3C">React.js</span><span style="background:#F1C40F">Redux</span><span style="background:#1ABC9C">Styled-component</span><span style="background:#3498DB">ESLint, Prettier</span><span style="background:#9B59B6">Create React App</span><span style="background:#2E4053">AWS S3</span><span style="background:#A04000">Figma</span><span style="background:#148F77">git</span><span style="background:#FF9AFF">반응형</span></p><p><span>SANTA는 혼자서는 가기는 애매하고, 지인들은 바빠서 등산을 망설이시는 분들을 위한 등산메이트를 구할 수 있는 서비스입니다!
-  </span></p><p><a href="https://github.com/Jennayeo/weShare"><img src="./images/link.png"/>바로가기</a><a href="https://github.com/Jennayeo/weShare"><img src="./images/github.png"/>Github</a></p></div>`;
+  </span></p><p><a href="https://github.com/Seobe95/SANTA"><img src="./images/github.png"/>Github</a></p></div>`;
 };
 btn3.onclick = function () {
   modal.style.display = "block";
@@ -105,7 +105,7 @@ btn6.onclick = function () {
 
   modalBody.innerHTML += `<div><h1>개인 포트폴리오 version 1.0</h1><div class="carousel-container">
   <button class="next-button" ><img id="next" class="arrow-icon" src="./images/icons/arrow.png"/></button><div class="carousel"><img class="carousel-slide" src="/images/projects/portfolio1.png"/><img class="carousel-slide" src="/images/projects/portfolio2.png"/><img class="carousel-slide" src="/images/projects/portfolio3.png"/></div></div></div><div class="carousel-text"><p><span style="background:#E74C3C">React.js</span><span style="background:#F1C40F">Typescript</span><span style="background:#1ABC9C">Next.js</span><span style="background:#3498DB">Tailwind CSS</span><span style="background:#9B59B6">ESLint, Prettier</span><span style="background:#A04000">Vercel</span><span style="background:#2E4053">Notion Api</span><span style="background:#148F77">git</span></p><p><span>next.js와 tailwind css를 사용해보고싶어 가볍게 만들어 본 포트폴리오 프로젝트입니다. 노션API를 활용하여 DB를 연동하였고, Vercel을 이용하여 배포하였습니다. 현재는 version2.0으로 리뉴얼되었습니다.
-  </span></p></div>`;
+  </span></p><p><a href="https://github.com/Jennayeo/nextjs-tailwindCSS"><img src="./images/github.png"/>Github</a></p></div>`;
   window.scrollTo({ top: 33 * unit, left: 0, behavior: "smooth" });
 
   if (modalBody.classList.contains("check")) {
