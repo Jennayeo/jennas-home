@@ -31,7 +31,7 @@ btn1.onclick = function () {
   window.scrollTo({ top: 30 * unit, left: 0, behavior: "smooth" });
   modalBody.innerHTML += `<div><h1>weShareTennis!</h1><p><img src="/images/projects/weShare.png"/></p></div><div><p><span style="background:#E74C3C">Next.js</span><span style="background:#F1C40F">Typescript</span><span style="background:#1ABC9C">SCSS</span><span style="background:#3498DB">ESLint, Prettier</span><span style="background:#9B59B6">SWR</span><span style="background:#2E4053">Lighthouse</span><span style="background:#A04000">Vercel</span><span style="background:#148F77">git</span></p><p><span>Naver Map Api를 사용하였고 서울시 공공API를 활용해 테니스 코트 데이터를 불러오고있습니다.
   현재는 공립 코트의 예약 가능, 불가능 여부만 확인이 가능하며
-  추후 사립 코트와 무인 볼머신 코트 데이터 추가, 카테고리별 확인 기능 그리고 유저들 간의 소통이 가능하도록 디벨롭 예정입니다.</span></p><p><a href="https://github.com/Jennayeo/weShare"><img src="./images/link.png"/>바로가기</a><a href="https://github.com/Jennayeo/weShare"><img src="./images/github.png"/>Github</a></p></div>`;
+  추후 사립 코트와 무인 볼머신 코트 데이터 추가, 카테고리별 확인 기능 그리고 유저들 간의 소통이 가능하도록 디벨롭 예정입니다.</span></p><p><a href="https://wesharetennis.vercel.app/"><img src="./images/link.png"/>바로가기</a><a href="https://github.com/Jennayeo/weShare"><img src="./images/github.png"/>Github</a></p></div>`;
   document.getElementsByClassName("tag").style.background = random_color;
 };
 
