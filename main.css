@@ -345,7 +345,7 @@ a {
   /* border: 10px dashed yellow; */
 }
 
-.airplane {
+.jenna-emoji {
   position: absolute;
   left: 0;
   top: 0;
@@ -359,7 +359,7 @@ a {
   );
 }
 
-.airplane[data-direction="up"] {
+.jenna-emoji[data-direction="up"] {
   transform: rotate(0deg);
 }
 

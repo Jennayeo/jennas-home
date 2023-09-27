@@ -29,29 +29,8 @@ function handleIntersection(entries, observer) {
       observer.unobserve(entry.target);
     }
   });
-
-  //   entries.forEach((entry) => {
-  //     if (entry.isIntersecting) {
-  //       // Add the "fade-in-active" class to the element
-  //       entry.target.classList.add("text-block-career-active");
-
-  //       // Once the animation is complete, remove the observer to save resources
-  //       observer.unobserve(entry.target);
-  //     } else if (!entry.isIntersecting) {
-  //       //   entry.target.classList.remove("text-block-career-active");
-  //       //   entry.target.classList.add("text-block-career");
-  //     }
-  //   });
 }
-// window.addEventListener("scroll", (e) => {
-//   console.log(career);
-// });
-
 // Create an Intersection Observer
 const observer = new IntersectionObserver(handleIntersection, options);
 
-// Observe each element with the class "fade-in"
-// career.forEach((element) => {
-//   console.log(element);
 observer.observe(career);
-// });

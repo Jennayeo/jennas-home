@@ -1,11 +1,11 @@
-import "./scroll-timeline.js";
-import "./airplane.js";
-import "./hello.js";
-import "./gallery.js";
-import "./track.js";
-import "./carrer.js";
-import "./education.js";
-import "./modal.js";
+import "./js/scroll-timeline.js";
+import "./js/jenna-emoji.js";
+// import "./js/hello.js";
+import "./js/gallery.js";
+import "./js/track.js";
+import "./js/career.js";
+import "./js/education.js";
+import "./js/modal.js";
 
 document.body.animate(
   [
@@ -33,7 +33,7 @@ copyText.onclick = function () {
     .writeText("jenna.jiyoung.yeo@gmail.com")
     .then(() => {
       // Success callback
-      alert("이메일이 복사되었습니다!");
+      alert("이메일'jenna.jiyoung.yeo@gmail.com'이 복사되었습니다!");
     })
     .catch((error) => {
       // Error callback

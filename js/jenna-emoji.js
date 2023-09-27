@@ -1,10 +1,10 @@
-const airplane = document.querySelector(".airplane");
+const jenna = document.querySelector(".jenna-emoji");
 const airplaneScrollTimeline = document.querySelector(
   ".airplane-scroll-timeline"
 );
 const career = document.querySelector(".text-block-career");
 
-airplane.animate(
+jenna.animate(
   [
     { offsetDistance: "100%", offset: 0 },
     { offsetDistance: "47%", offset: 0.4 },
@@ -34,12 +34,12 @@ window.addEventListener("scroll", (e) => {
     scrollFlag = false;
 
     if (window.scrollY >= prevScrollY) {
-      console.log("down");
+      // console.log("down");
       //   console.log(career);
-      airplane.dataset.direction = "down";
+      jenna.dataset.direction = "down";
     } else {
-      console.log("up");
-      airplane.dataset.direction = "up";
+      // console.log("up");
+      jenna.dataset.direction = "up";
     }
     prevScrollY = window.scrollY;
   }, 100);

@@ -1,5 +1,26 @@
-const education = document.querySelector(".text-block-education");
-// const fadeOut = document.querySelector(".text-block-career-active");
+// const galleryTimelineElem = document.querySelector(".gallery-timeline");
+const gallery = document.querySelector(".gallery");
+
+// gallery.animate(
+//   [
+//     { opacity: 0, offset: 0 },
+//     { opacity: 1, offset: 0.04 },
+//     { transform: "translateX(0)", offset: 0.1 },
+//     { transform: "translateX(calc(-100% + 100vw)", offset: 0.9 },
+//     { opacity: 1, offset: 0.96 },
+//     { opacity: 0, transform: "translateX(calc(-100% + 100vw)", offset: 1 },
+//   ],
+//   {
+//     duration: 1,
+//     fill: "both",
+//     timeline: new ScrollTimeline({
+//       scrollOffsets: [
+//         { target: galleryTimelineElem, edge: "start", threshold: 1 },
+//         { target: galleryTimelineElem, edge: "end", threshold: 1 },
+//       ],
+//     }),
+//   }
+// );
 
 const airplaneScrollTimeline = document.querySelector(
   ".airplane-scroll-timeline"
@@ -20,7 +41,7 @@ function handleIntersection(entries, observer) {
       const isEnteringViewport = entry.boundingClientRect.top >= 0;
       // Add or remove the appropriate class based on scrolling direction
       if (isEnteringViewport) {
-        entry.target.classList.add("text-block-education-active");
+        entry.target.classList.add("gallery-active");
       } else {
         // entry.target.classList.remove("text-block-career-active");
       }
@@ -29,29 +50,9 @@ function handleIntersection(entries, observer) {
       observer.unobserve(entry.target);
     }
   });
-
-  //   entries.forEach((entry) => {
-  //     if (entry.isIntersecting) {
-  //       // Add the "fade-in-active" class to the element
-  //       entry.target.classList.add("text-block-career-active");
-
-  //       // Once the animation is complete, remove the observer to save resources
-  //       observer.unobserve(entry.target);
-  //     } else if (!entry.isIntersecting) {
-  //       //   entry.target.classList.remove("text-block-career-active");
-  //       //   entry.target.classList.add("text-block-career");
-  //     }
-  //   });
 }
-// window.addEventListener("scroll", (e) => {
-//   console.log(career);
-// });
 
 // Create an Intersection Observer
 const observer = new IntersectionObserver(handleIntersection, options);
-
-// Observe each element with the class "fade-in"
-// career.forEach((element) => {
-//   console.log(element);
-observer.observe(education);
+observer.observe(gallery);
 // });

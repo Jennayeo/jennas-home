@@ -1,26 +1,5 @@
-// const galleryTimelineElem = document.querySelector(".gallery-timeline");
-const gallery = document.querySelector(".gallery");
-
-// gallery.animate(
-//   [
-//     { opacity: 0, offset: 0 },
-//     { opacity: 1, offset: 0.04 },
-//     { transform: "translateX(0)", offset: 0.1 },
-//     { transform: "translateX(calc(-100% + 100vw)", offset: 0.9 },
-//     { opacity: 1, offset: 0.96 },
-//     { opacity: 0, transform: "translateX(calc(-100% + 100vw)", offset: 1 },
-//   ],
-//   {
-//     duration: 1,
-//     fill: "both",
-//     timeline: new ScrollTimeline({
-//       scrollOffsets: [
-//         { target: galleryTimelineElem, edge: "start", threshold: 1 },
-//         { target: galleryTimelineElem, edge: "end", threshold: 1 },
-//       ],
-//     }),
-//   }
-// );
+const education = document.querySelector(".text-block-education");
+// const fadeOut = document.querySelector(".text-block-career-active");
 
 const airplaneScrollTimeline = document.querySelector(
   ".airplane-scroll-timeline"
@@ -39,10 +18,9 @@ function handleIntersection(entries, observer) {
     if (entry.isIntersecting) {
       // Check if the element is entering or leaving the viewport
       const isEnteringViewport = entry.boundingClientRect.top >= 0;
-      console.log(isEnteringViewport);
       // Add or remove the appropriate class based on scrolling direction
       if (isEnteringViewport) {
-        entry.target.classList.add("gallery-active");
+        entry.target.classList.add("text-block-education-active");
       } else {
         // entry.target.classList.remove("text-block-career-active");
       }
@@ -55,5 +33,5 @@ function handleIntersection(entries, observer) {
 
 // Create an Intersection Observer
 const observer = new IntersectionObserver(handleIntersection, options);
-observer.observe(gallery);
-// });
+
+observer.observe(education);
